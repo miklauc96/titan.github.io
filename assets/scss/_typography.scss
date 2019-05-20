@@ -36,6 +36,7 @@ blockquote {
 	font-family: "Roboto Condensed", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+
 }
 
 .font-serif {
@@ -84,7 +85,7 @@ blockquote {
 	display: table;
 }
 
-.alt-module-subtitle h5 {
+.alt-module-subtitle h6 {
 	display: table-cell;
 	white-space: pre;
 	padding: 0 8px;
@@ -133,4 +134,8 @@ blockquote {
 	font-size: 50px;
 	padding: 40px 0px;
 	letter-spacing: 8px;
+}
+
+h6{
+ font-size: 14px;
 }

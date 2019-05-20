@@ -23,7 +23,7 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
-	height: 33px;
+	height: 33px; 
 	border: 1px solid #EAEAEA;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -33,7 +33,9 @@
 	-ms-transition: all 0.4s ease-in-out 0s;
 	-o-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
+	
 }
+
 
 .form-control:focus {
 	border-color: #CACACA;
@@ -41,13 +43,14 @@
 
 /* Forms size */
 
-.input-lg,
+.form-control-lg ,
 .form-horizontal .form-group-lg .form-control {
 	height: 43px;
 	font-size: 13px;
+	
 }
 
-.input-sm, .form-horizontal .form-group-sm .form-control {
+.form-control-sm, .form-horizontal .form-group-sm .form-control {
 	height: 29px;
 	font-size: 10px;
 }

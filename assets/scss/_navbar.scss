@@ -38,7 +38,7 @@
 	color: #fff;
 }
 
-.navbar-custom .nav li > a {
+.navbar-custom  li > a {
 	position: relative;
 	color: rgba(255, 255, 255, .7);
 }
@@ -49,6 +49,7 @@
 	letter-spacing: 2px;
 	color: #999;
 }
+
 
 .navbar-custom .dropdown-menu .dropdown-menu {
 	border-left: 1px solid rgba(73, 71, 71, 0.15);
@@ -65,11 +66,11 @@
 	left: auto;
 }
 
-.navbar-custom .nav > li > a:focus,
-.navbar-custom .nav > li > a:hover,
-.navbar-custom .nav .open > a,
-.navbar-custom .nav .open > a:focus,
-.navbar-custom .nav .open > a:hover,
+.navbar-custom > li > a:focus,
+.navbar-custom  > li > a:hover,
+.navbar-custom  .open > a,
+.navbar-custom  .open > a:focus,
+.navbar-custom  .open > a:hover,
 .navbar-custom .dropdown-menu > li > a:focus,
 .navbar-custom .dropdown-menu > li > a:hover {
 	background: none;
@@ -80,19 +81,7 @@
 	background: rgba(255, 255, 255, .1) !important;
 }
 
-.navbar-custom .dropdown-toggle:after {
-	position: absolute;
-	display: block;
-	right: 0;
-	top: 50%;
-	margin-top: -6px;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: 9px;
-	content: "\f107";
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+
 
 .navbar-custom .navbar-toggle .icon-bar {
 	background: #fff;
@@ -101,6 +90,19 @@
 .dropdown-menu {
 	min-width: 180px;
 	font-size: 11px;
+}
+
+.navbar-custom .navbar-toggler .fa.fa-navicon {
+
+	color:#fff;
+	
+}
+
+.navbar-custom .dropdown-toggle:after {
+	border: none!important;
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f107"!important; /* the desired FontAwesome icon */
+	vertical-align: 0; /* to center vertically */
 }
 
 /* Navbar search

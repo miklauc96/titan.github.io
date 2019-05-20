@@ -11,6 +11,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+
+
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -71,8 +74,7 @@ a,
 /* Reset box-shadow */
 
 .btn,
-.well,
-.panel,
+.card,
 .progress,
 .form-control,
 .form-control:hover,
@@ -84,21 +86,32 @@ a,
 
 /* Reset border-radius */
 
-.well,
+.card,
 .label,
 .alert,
 .progress,
 .form-control,
 .modal-content,
-.panel-heading,
-.panel-group .panel,
-.nav-tabs > li > a,
-.nav-pills > li > a {
+.card-header,
+.card-group .card,
+.nav-tabs > li.nav-item > a.nav-link,
+.nav-pills > li.nav-item > a.nav-link {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	-o-border-radius: 2px;
 	border-radius: 2px;
 }
+
+/* Card sizes*/
+.card-header-sm
+{	
+		padding: 9px 9px;	
+}
+.card-header-lg
+{	
+		padding: 24px 24px;	
+}
+
 
 .pr-remove {
 	/*vertical-align: middle !important;*/
@@ -166,6 +179,9 @@ a,
 .navbar-custom + .main {
 	margin-top: 50px;
 }
+.navbar-drago + .main {
+	margin-top: 50px;
+}
 
 .main {
 	position: relative;
@@ -183,13 +199,17 @@ a,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: hidden;
+	
 }
 
 /* Module header */
 
 .module-small {
-	padding: 70px 0;
+	padding: 55px 0px;
+
 }
+
 
 .module-extra-small {
 	padding: 25px 0px;
@@ -249,6 +269,12 @@ a,
 	padding: 140px 60px 140px;
 }
 
+.fulls
+{
+	width: 100%;
+	height: 400px;
+	background-color: red;
+}
 
 /* Dark background */
 
@@ -265,14 +291,18 @@ a,
 .bg-dark-60 .module-subtitle,
 .bg-dark-90 .module-subtitle,
 .bg-dark .alt-module-subtitle h5,
-.bg-dark-30 .alt-module-subtitle h5,
-.bg-dark-60 .alt-module-subtitle h5,
-.bg-dark-90 .alt-module-subtitle h5 {
+.bg-dark-30 .alt-module-subtitle  h5, 
+.bg-dark-60 .alt-module-subtitle  h5,
+.bg-dark-90 .alt-module-subtitle  h5
+.bg-dark .alt-module-subtitle h6,
+.bg-dark-30 .alt-module-subtitle  h6, 
+.bg-dark-60 .alt-module-subtitle  h6,
+.bg-dark-90 .alt-module-subtitle  h6 {
 	color: #fff;
 }
 
 .bg-dark {
-	background: #111;
+	background: #111 !important;
 }
 
 .bg-dark-30:before {
@@ -341,6 +371,7 @@ a,
 .pt-40  {padding-top:40px!important}
 .pt-50  {padding-top:50px!important}
 .pt-140 {padding-top:140px!important}
+.pt-400 {padding-top:400px!important}
 
 .pb-0   {padding-bottom:0!important}
 .pb-10  {padding-bottom:10px!important}
@@ -349,6 +380,9 @@ a,
 .pb-40  {padding-bottom:40px!important}
 .pb-50  {padding-bottom:50px!important}
 .pb-140 {padding-bottom:140px!important}
+.pb-350 {padding-bottom:350px!important}
+
+
 
 .m-0 {margin:0 !important}
 .mt-0  {margin-top:0 !important}

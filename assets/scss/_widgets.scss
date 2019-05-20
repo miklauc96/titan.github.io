@@ -37,17 +37,21 @@
 }
 
 /* Accordion */
-
-.panel-title {
-	font-size: 14px;
+.card{
+	margin: 0.3rem 0rem;
 }
 
-.panel-heading a {
+.card-title {
+	font-size: 14px;
+	margin: 0px;
+}
+
+.card-header a {
 	position: relative;
 	display: block;
 }
 
-.panel-heading a:after {
+.card-header a:after {
 	position: absolute;
 	content: "\f106";
 	top: 50%;
@@ -58,7 +62,7 @@
 	margin-top: -7px;
 }
 
-.panel-heading a.collapsed:after {
+.card-header a.collapsed:after {
 	content: "\f107";
 }
 
