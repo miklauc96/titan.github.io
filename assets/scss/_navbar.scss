@@ -51,7 +51,8 @@
 	color: rgba(255, 255, 255, .7);
 	padding-top: 13px;
 	padding-bottom: 13px;
-	padding-right: 15px;
+	padding-right: 20px;
+	
 }
 
 .navbar-custom .dropdown-menu > li > a {
@@ -142,7 +143,7 @@
 }
 
 @media (max-width: 767px) {
-	.navbar-nav {
+.navbar-nav {
 	/* Optional - You can set a  min-height : whatever px; for reserving some space*/
 	max-height: 400px;
 	max-width: auto;
@@ -150,7 +151,7 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	 }
-	 .navbar-custom .dropdown-menu > li > a{
+ .navbar-custom .dropdown-menu > li > a{
 	position: relative;	
 	background-color: inherit;
 	padding-left: 25px;	
