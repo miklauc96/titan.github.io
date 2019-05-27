@@ -9,7 +9,7 @@ var uglify       = require('gulp-uglify');
 gulp.task('sass', async function() {
     gulp.src('assets/scss/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe (concat('style2.css'))
+        .pipe (concat('style.css'))
         
         .pipe(gulp.dest('assets/css/'))
 });

@@ -11,9 +11,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-
-
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -94,8 +91,8 @@ a,
 .modal-content,
 .card-header,
 .card-group .card,
-.nav-tabs > li.nav-item > a.nav-link,
-.nav-pills > li.nav-item > a.nav-link {
+.nav-tabs > li > a,
+.nav-pills > li > a {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	-o-border-radius: 2px;
@@ -179,9 +176,7 @@ a,
 .navbar-custom + .main {
 	margin-top: 50px;
 }
-.navbar-drago + .main {
-	margin-top: 50px;
-}
+
 
 .main {
 	position: relative;
@@ -452,6 +447,24 @@ a,
 	.mb-xs-80 {margin-bottom:80px !important}
 
 }
+/* Container and navigation width when mobile */
+
+@media (max-width: 767px) {
+.container {
+	width: 95%;
+	max-width: none;
+	}
+.navbar .container{
+	width: 100%;
+	max-width: none;
+	}
+	.navbar-custom .navbar-brand  {
+		padding-left: 15px;
+	}
+	.navbar-custom .nav-link  {
+		padding-left: 15px;
+	}
+  }
 
 /* Scroll to top */
 

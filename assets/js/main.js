@@ -518,7 +518,10 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         });
 
-
+        var $myGroup = $('#myGroup');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+$myGroup.find('.collapse.show').collapse('hide');
+});
         /*===============================================================
          Working Reservation Form
          ================================================================*/
@@ -559,7 +562,10 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         });
 
-
+        var $myGroup = $('#myGroup');
+        $myGroup.on('show.bs.collapse','.collapse', function() {
+            $myGroup.find('.collapse.in').collapse('hide');
+        });
         /* ---------------------------------------------- /*
          * Subscribe form ajax
          /* ---------------------------------------------- */
